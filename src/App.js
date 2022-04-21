@@ -8,8 +8,11 @@ import PostPage from './pages/PostPage'
 function App() {
 
 
+  //Инициализация начальных данных
   const [posts,setPosts] = useState([])
   
+
+  //Компонент отвечающий за страницы
   return (
     <BrowserRouter>
       <Routes>

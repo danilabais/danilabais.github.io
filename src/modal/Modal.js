@@ -5,6 +5,8 @@ const Modal = ({ active, setActive, addPost }) => {
   const [title, setTitle] = useState("");
   const [descr, setDescr] = useState("");
 
+
+  //Функция на добавление поста
   function submitHandler(event) {
     event.preventDefault();
     event.stopPropagation();
@@ -13,6 +15,8 @@ const Modal = ({ active, setActive, addPost }) => {
     setDescr("");
     setActive(false);
   }
+
+//Закрыть модалку
   const closeModal = () => {
     setTitle("");
     setDescr("");

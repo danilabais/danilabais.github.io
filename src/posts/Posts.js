@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import Post from "./Post";
 import "./posts.css";
 
+
+// Компонент по рендерингу всех постов
 function Posts(props) {
   return (
     <div className="wrapper">
@@ -13,6 +15,8 @@ function Posts(props) {
   );
 }
 
+
+// Проверка что пропс - массив и должен быть обязательным
 Posts.propTypes = {
   posts: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

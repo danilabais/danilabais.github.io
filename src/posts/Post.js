@@ -3,7 +3,7 @@ import "./posts.css";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-
+//компонент по отображению карточки поста, принимает данные о посте пропсом
 function Post({ post }) {
   return (
     <div className="post">
@@ -16,6 +16,8 @@ function Post({ post }) {
   );
 }
 
+
+//Проверка что пропс это обьект
 Post.propTypes = {
     post: PropTypes.object,
   };
