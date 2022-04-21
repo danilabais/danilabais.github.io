@@ -1,0 +1,55 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.411);
+  opacity: 0;
+  pointer-events: none;
+}
+.modal__body {
+  width: 400px;
+  border-radius: 20px;
+  padding: 20px;
+  background: silver;
+  border: 4px solid black;
+  scale: 0;
+}
+
+.modal.active {
+  opacity: 1;
+  transition: all 0.5s ease;
+  pointer-events: all;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+}
+input {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+textarea {
+  height: 200px;
+  font-size: 2rem;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+.wrapperBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+.wrapperBtn button {
+  background: rgb(160, 160, 248);
+  border: 1px solid rgb(4, 4, 145);
+  padding: 10px 20px;
+  margin: 6px;
+}
